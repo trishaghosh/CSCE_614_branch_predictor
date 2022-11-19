@@ -4,7 +4,7 @@ Code has been largely inspired  by the tagged PPM predictor simulator from Pierr
 
 
 */
-// my_predictor.h
+// tage_predictor.h
 #include <inttypes.h>
 #include <math.h>
 
@@ -75,7 +75,7 @@ public:
 };
 
 
-class my_predictor:public branch_predictor
+class tage_predictor:public branch_predictor
 {
 public:
   branch_update u;
@@ -183,7 +183,7 @@ public:
 
 
 
-  my_predictor (void)
+  tage_predictor (void)
   {
     USE_ALT_ON_NA = 0;
     Seed = 0;

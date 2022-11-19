@@ -7,7 +7,7 @@ Proceedings of the 41st Annual International Symposium on Microarchitecture
 
 To use this code, download the CBP2 infrastructure 
 (see http://cava.cs.utsa.edu/camino/cbp2/cbp2-infrastructure-v2/)
-and use this code as "my_predictor.h" in the src directory.
+and use this code as "snp_predictor.h" in the src directory.
 
 */
 
@@ -15,14 +15,14 @@ and use this code as "my_predictor.h" in the src directory.
 
 typedef char byte;
 
-class snp_update : public branch_update {
+class snp_cust_update : public branch_update {
 public:
 	double	yout;
 	unsigned int *addresses;
 	unsigned int set;
 	byte *global_history;
 	unsigned int address;
-	snp_update (void) { }
+	snp_cust_update (void) { }
 };
 
 class snp : public branch_predictor {
@@ -56,7 +56,7 @@ private:
 		*lgnents,		// log2 (number of entries) in k'th column
 		*nents;			// number of entries in k'th column
 
-	snp_update
+	snp_cust_update
 		update_buf[100];	// queue of update state entries
 
 	byte
@@ -248,7 +248,7 @@ public:
 		return z % nents[k];
 	}
 
-	byte *hisb (snp_update *u, int i) {
+	byte *hisb (snp_cust_update *u, int i) {
 		switch (modulo_type) {
 			case 3:
 			if ((i/history_modulus) & 1)
@@ -260,7 +260,7 @@ public:
 		}
 	}
 
-	double compute_output (snp_update *u) {
+	double compute_output (snp_cust_update *u) {
 		int	i, k;
 		double sum_pos, sum;
 		unsigned int *v = u->addresses;
@@ -288,7 +288,7 @@ public:
 	// train the perceptron formed by looking at one weight from each
 	// of the addresses in v[]
 
-	void train (snp_update *u, bool taken, bool correct) {
+	void train (snp_cust_update *u, bool taken, bool correct) {
 		int	i, k, a;
 		byte *c;
 		unsigned int *v = u->addresses;
@@ -338,7 +338,7 @@ public:
 	// predict the branch at this address 
 
 	branch_update *predict (unsigned int address) { 
-		snp_update *u; 
+		snp_cust_update *u; 
 		u = &update_buf[update_index++];
 		if (update_index >= 100) update_index = 0;
 		u->address = address;
@@ -360,7 +360,7 @@ public:
 	// update an executed branch
 
 	void update (branch_update *u, bool taken) {
-		snp_update *hu = (snp_update *) u;
+		snp_cust_update *hu = (snp_cust_update *) u;
 		
 		bool correct = taken == u->direction_prediction();
 
@@ -379,18 +379,18 @@ public:
 };
 
 
-class my_update : public branch_update {
+class snp_update : public branch_update {
 public:
 	branch_update *p;
 };
 
-class my_predictor : public branch_predictor {
+class snp_predictor : public branch_predictor {
 public:
 	snp *pred;
 	branch_info bi;
-	my_update u;
+	snp_update u;
 
-	my_predictor (void) { 
+	snp_predictor (void) { 
 		double a = 0.04;
 		double b = 0.05;
 		double *sp = new double[1024];

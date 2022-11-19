@@ -1,24 +1,25 @@
-// my_predictor.h
-// This file contains a sample my_predictor class.
+// gshare_predictor.h
+// This file contains a sample gshare_predictor class.
 // It is a simple 32,768-entry gshare with a history length of 15.
 // Note that this predictor doesn't use the whole 32 kilobytes available
 // for the CBP-2 contest; it is just an example.
+// 6.3 mpki
 
-class my_update : public branch_update {
+class gshare_update : public branch_update {
 public:
 	unsigned int index;
 };
 
-class my_predictor : public branch_predictor {
+class gshare_predictor : public branch_predictor {
 public:
 #define HISTORY_LENGTH	15
 #define TABLE_BITS	15
-	my_update u;
+	gshare_update u;
 	branch_info bi;
 	unsigned int history;
 	unsigned char tab[1<<TABLE_BITS];
 
-	my_predictor (void) : history(0) { 
+	gshare_predictor (void) : history(0) { 
 		memset (tab, 0, sizeof (tab));
 	}
 
@@ -38,7 +39,7 @@ public:
 
 	void update (branch_update *u, bool taken, unsigned int target) {
 		if (bi.br_flags & BR_CONDITIONAL) {
-			unsigned char *c = &tab[((my_update*)u)->index];
+			unsigned char *c = &tab[((gshare_update*)u)->index];
 			if (taken) {
 				if (*c < 3) (*c)++;
 			} else {
@@ -49,4 +50,4 @@ public:
 			history &= (1<<HISTORY_LENGTH)-1;
 		}
 	}
-};
+};  //sds
