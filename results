@@ -1,0 +1,115 @@
+TAGE Seznec:
+traces/164.gzip/gzip.trace.bz2                  10.074 0.203
+traces/175.vpr/vpr.trace.bz2                    9.010 0.202
+traces/176.gcc/gcc.trace.bz2                    3.222 0.615
+traces/181.mcf/mcf.trace.bz2                    9.049 0.202
+traces/186.crafty/crafty.trace.bz2              2.442 0.203
+traces/197.parser/parser.trace.bz2              5.152 0.207
+traces/201.compress/compress.trace.bz2          5.712 0.325
+traces/202.jess/jess.trace.bz2                  0.371 1.458
+traces/205.raytrace/raytrace.trace.bz2          0.346 4.613
+traces/209.db/db.trace.bz2                      2.339 3.472
+traces/213.javac/javac.trace.bz2                1.080 0.976
+traces/222.mpegaudio/mpegaudio.trace.bz2        1.068 0.909
+traces/227.mtrt/mtrt.trace.bz2                  0.386 4.187
+traces/228.jack/jack.trace.bz2                  0.592 3.954
+traces/252.eon/eon.trace.bz2                    0.219 4.761
+traces/253.perlbmk/perlbmk.trace.bz2            0.311 0.203
+traces/254.gap/gap.trace.bz2                    1.460 0.263
+traces/255.vortex/vortex.trace.bz2              0.139 0.210
+traces/256.bzip2/bzip2.trace.bz2                0.036 0.202
+traces/300.twolf/twolf.trace.bz2                13.284 0.203
+average direction MPKI: 3.314
+average indirect MPKI: 1.368
+
+GSHARE:
+traces/164.gzip/gzip.trace.bz2                  12.473 0.001
+traces/175.vpr/vpr.trace.bz2                    13.415 0.001
+traces/176.gcc/gcc.trace.bz2                    11.254 0.084
+traces/181.mcf/mcf.trace.bz2                    15.837 0.001
+traces/186.crafty/crafty.trace.bz2              5.837 0.001
+traces/197.parser/parser.trace.bz2              10.008 0.001
+traces/201.compress/compress.trace.bz2          7.831 0.005
+traces/202.jess/jess.trace.bz2                  1.562 0.175
+traces/205.raytrace/raytrace.trace.bz2          2.756 0.308
+traces/209.db/db.trace.bz2                      3.909 0.099
+traces/213.javac/javac.trace.bz2                2.267 0.021
+traces/222.mpegaudio/mpegaudio.trace.bz2        2.188 0.010
+traces/227.mtrt/mtrt.trace.bz2                  2.657 0.248
+traces/228.jack/jack.trace.bz2                  3.033 0.914
+traces/252.eon/eon.trace.bz2                    1.807 1.043
+traces/253.perlbmk/perlbmk.trace.bz2            2.554 0.001
+traces/254.gap/gap.trace.bz2                    3.926 0.046
+traces/255.vortex/vortex.trace.bz2              1.222 0.001
+traces/256.bzip2/bzip2.trace.bz2                0.094 0.001
+traces/300.twolf/twolf.trace.bz2                21.489 0.001
+average direction MPKI: 6.305
+average indirect MPKI: .148
+
+HYBRID Predictor:
+traces/164.gzip/gzip.trace.bz2          	10.074 0.203
+traces/175.vpr/vpr.trace.bz2            	9.010 0.202
+traces/176.gcc/gcc.trace.bz2            	3.222 0.615
+traces/181.mcf/mcf.trace.bz2            	9.049 0.202
+traces/186.crafty/crafty.trace.bz2      	2.442 0.203
+traces/197.parser/parser.trace.bz2      	5.152 0.207
+traces/201.compress/compress.trace.bz2  	5.712 0.325
+traces/202.jess/jess.trace.bz2          	0.371 1.458
+traces/205.raytrace/raytrace.trace.bz2  	0.346 4.613
+traces/209.db/db.trace.bz2              	2.339 3.472
+traces/213.javac/javac.trace.bz2        	1.080 0.976
+traces/222.mpegaudio/mpegaudio.trace.bz2	1.068 0.909
+traces/227.mtrt/mtrt.trace.bz2          	0.386 4.187
+traces/228.jack/jack.trace.bz2          	0.592 3.954
+traces/252.eon/eon.trace.bz2            	0.219 4.761
+traces/253.perlbmk/perlbmk.trace.bz2    	0.311 0.203
+traces/254.gap/gap.trace.bz2            	1.460 0.263
+traces/255.vortex/vortex.trace.bz2      	0.139 0.210
+traces/256.bzip2/bzip2.trace.bz2        	0.036 0.202
+traces/300.twolf/twolf.trace.bz2        	13.284 0.203
+average direction MPKI: 3.314
+average indirect MPKI: 1.368
+Thu Nov 24 19:15:07 CST 2022	traces/164.gzip/gzip.trace.bz2          	10.074 0.203
+Thu Nov 24 19:15:07 CST 2022	traces/175.vpr/vpr.trace.bz2            	9.010 0.202
+Thu Nov 24 19:15:07 CST 2022	traces/176.gcc/gcc.trace.bz2            	3.222 0.615
+Thu Nov 24 19:15:07 CST 2022	traces/181.mcf/mcf.trace.bz2            	9.049 0.202
+Thu Nov 24 19:15:07 CST 2022	traces/186.crafty/crafty.trace.bz2      	2.442 0.203
+Thu Nov 24 19:15:07 CST 2022	traces/197.parser/parser.trace.bz2      	5.152 0.207
+Thu Nov 24 19:15:07 CST 2022	traces/201.compress/compress.trace.bz2  	5.712 0.325
+Thu Nov 24 19:15:07 CST 2022	traces/202.jess/jess.trace.bz2          	0.371 1.458
+Thu Nov 24 19:15:07 CST 2022	traces/205.raytrace/raytrace.trace.bz2  	0.346 4.613
+Thu Nov 24 19:15:07 CST 2022	traces/209.db/db.trace.bz2              	2.339 3.472
+Thu Nov 24 19:15:07 CST 2022	traces/213.javac/javac.trace.bz2        	1.080 0.976
+Thu Nov 24 19:15:07 CST 2022	traces/222.mpegaudio/mpegaudio.trace.bz2	1.068 0.909
+Thu Nov 24 19:15:07 CST 2022	traces/227.mtrt/mtrt.trace.bz2          	0.386 4.187
+Thu Nov 24 19:15:07 CST 2022	traces/228.jack/jack.trace.bz2          	0.592 3.954
+Thu Nov 24 19:15:07 CST 2022	traces/252.eon/eon.trace.bz2            	0.219 4.761
+Thu Nov 24 19:15:07 CST 2022	traces/253.perlbmk/perlbmk.trace.bz2    	0.311 0.203
+Thu Nov 24 19:15:07 CST 2022	traces/254.gap/gap.trace.bz2            	1.460 0.263
+Thu Nov 24 19:15:07 CST 2022	traces/255.vortex/vortex.trace.bz2      	0.139 0.210
+Thu Nov 24 19:15:07 CST 2022	traces/256.bzip2/bzip2.trace.bz2        	0.036 0.202
+Thu Nov 24 19:15:07 CST 2022	traces/300.twolf/twolf.trace.bz2        	13.284 0.203
+average direction MPKI: 3.314
+average indirect MPKI: 1.368
+Thu Nov 24 20:45:55 CST 2022	traces/164.gzip/gzip.trace.bz2          	10.074 0.203
+Thu Nov 24 20:45:55 CST 2022	traces/175.vpr/vpr.trace.bz2            	9.010 0.202
+Thu Nov 24 20:45:55 CST 2022	traces/176.gcc/gcc.trace.bz2            	3.222 0.615
+Thu Nov 24 20:45:55 CST 2022	traces/181.mcf/mcf.trace.bz2            	9.049 0.202
+Thu Nov 24 20:45:55 CST 2022	traces/186.crafty/crafty.trace.bz2      	2.442 0.203
+Thu Nov 24 20:45:55 CST 2022	traces/197.parser/parser.trace.bz2      	5.152 0.207
+Thu Nov 24 20:45:55 CST 2022	traces/201.compress/compress.trace.bz2  	5.712 0.325
+Thu Nov 24 20:45:55 CST 2022	traces/202.jess/jess.trace.bz2          	0.371 1.458
+Thu Nov 24 20:45:55 CST 2022	traces/205.raytrace/raytrace.trace.bz2  	0.346 4.613
+Thu Nov 24 20:45:55 CST 2022	traces/209.db/db.trace.bz2              	2.339 3.472
+Thu Nov 24 20:45:55 CST 2022	traces/213.javac/javac.trace.bz2        	1.080 0.976
+Thu Nov 24 20:45:55 CST 2022	traces/222.mpegaudio/mpegaudio.trace.bz2	1.068 0.909
+Thu Nov 24 20:45:55 CST 2022	traces/227.mtrt/mtrt.trace.bz2          	0.386 4.187
+Thu Nov 24 20:45:55 CST 2022	traces/228.jack/jack.trace.bz2          	0.592 3.954
+Thu Nov 24 20:45:55 CST 2022	traces/252.eon/eon.trace.bz2            	0.219 4.761
+Thu Nov 24 20:45:55 CST 2022	traces/253.perlbmk/perlbmk.trace.bz2    	0.311 0.203
+Thu Nov 24 20:45:55 CST 2022	traces/254.gap/gap.trace.bz2            	1.460 0.263
+Thu Nov 24 20:45:55 CST 2022	traces/255.vortex/vortex.trace.bz2      	0.139 0.210
+Thu Nov 24 20:45:55 CST 2022	traces/256.bzip2/bzip2.trace.bz2        	0.036 0.202
+Thu Nov 24 20:45:55 CST 2022	traces/300.twolf/twolf.trace.bz2        	13.284 0.203
+average direction MPKI: 3.314
+average indirect MPKI: 1.368
