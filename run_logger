@@ -12,7 +12,7 @@ if ( ! -e src/predict ) then
 	printf "predict program is not built.\n"
 	exit 1
 endif
-set trace_list = `find $1 -name '*.trace.*' | sort`
+set trace_list = `find $1 -name '*.*trace.*' | sort`
 set dsum = 0
 set isum = 0
 set n = 0
